@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>StudyMate | Online Islamic Learning Initiative</title>
+<meta content="A contemplative initiative dedicated to making meaningful, authentic Islamic education accessible to learners and families worldwide." name="description"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Noto+Naskh+Arabic:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,600;1,400&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config verbatim -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-primary-fixed": "#002117",
+            "surface-variant": "#e5e2db",
+            "surface": "#fcf9f2",
+            "secondary-container": "#beecdc",
+            "surface-container-high": "#ebe8e1",
+            "tertiary-container": "#654d1b",
+            "secondary-fixed-dim": "#a3d0c0",
+            "on-secondary-container": "#426c60",
+            "on-surface-variant": "#3f4944",
+            "error": "#ba1a1a",
+            "on-tertiary": "#ffffff",
+            "surface-white": "#FFFFFF",
+            "on-primary-container": "#8ed1b6",
+            "surface-sage": "#E4EDE4",
+            "outline": "#707974",
+            "accent-gold-light": "#F2E8D5",
+            "forest-dark": "#0A241E",
+            "outline-variant": "#bfc9c2",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed": "#ffdea5",
+            "secondary": "#3c665a",
+            "border-subtle": "#E7E5DC",
+            "primary-fixed-dim": "#92d4b9",
+            "background": "#fcf9f2",
+            "on-primary": "#ffffff",
+            "inverse-primary": "#92d4b9",
+            "on-primary-fixed-variant": "#02513d",
+            "surface-container-highest": "#e5e2db",
+            "surface-tint": "#276954",
+            "on-secondary-fixed": "#002019",
+            "text-secondary": "#66716A",
+            "surface-container-low": "#f6f3ec",
+            "surface-bright": "#fcf9f2",
+            "on-background": "#1c1c18",
+            "on-tertiary-fixed-variant": "#5a4311",
+            "primary-fixed": "#adf1d5",
+            "on-error-container": "#93000a",
+            "surface-container": "#f0eee7",
+            "primary": "#004231",
+            "surface-dim": "#dcdad3",
+            "on-secondary": "#ffffff",
+            "tertiary": "#4c3605",
+            "error-container": "#ffdad6",
+            "on-tertiary-container": "#e1bf82",
+            "on-secondary-fixed-variant": "#244e42",
+            "inverse-surface": "#31312c",
+            "secondary-fixed": "#beecdc",
+            "text-primary": "#202B26",
+            "on-tertiary-fixed": "#261900",
+            "primary-container": "#145b46",
+            "inverse-on-surface": "#f3f0ea",
+            "on-error": "#ffffff",
+            "on-surface": "#1c1c18",
+            "tertiary-fixed-dim": "#e4c284"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-md": "1rem",
+            "space-xs": "0.25rem",
+            "gutter": "1.5rem",
+            "margin": "1.25rem",
+            "space-xl": "2.5rem",
+            "space-lg": "1.5rem",
+            "space-3xl": "6rem",
+            "space-sm": "0.5rem",
+            "space-2xl": "4rem",
+            "margin-tablet": "2.5rem",
+            "margin-desktop": "4rem",
+            "gutter-desktop": "2rem"
+          },
+          "fontFamily": {
+            "headline-sm": ["Playfair Display"],
+            "body-sm": ["Inter"],
+            "label-button": ["Inter"],
+            "quran-verse": ["Noto Serif", "serif"],
+            "caption": ["Inter"],
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "display-hero-mobile": ["Playfair Display"],
+            "label-eyebrow": ["Inter"],
+            "headline-lg": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "headline-md": ["Playfair Display"],
+            "quran-verse-mobile": ["Noto Serif", "serif"],
+            "arabic": ["Noto Naskh Arabic", "serif"]
+          },
+          "fontSize": {
+            "headline-sm": ["22px", { "lineHeight": "30px", "fontWeight": "500" }],
+            "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "label-button": ["15px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "quran-verse": ["36px", { "lineHeight": "64px", "fontWeight": "400" }],
+            "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+            "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-eyebrow": ["12px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "display-hero": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "500" }],
+            "quran-verse-mobile": ["26px", { "lineHeight": "48px", "fontWeight": "400" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined', sans-serif !important;
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      font-weight: normal;
+      font-style: normal;
+      letter-spacing: normal;
+      text-transform: none;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Subtle geometric watermark for architectural serene depth */
+    .arabesque-subtle {
+      background-image: radial-gradient(circle at 50% 50%, rgba(228, 194, 132, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+    }
+    .arch-mask {
+      border-radius: 260px 260px 16px 16px;
+    }
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.05); }
+    }
+    .ambient-lantern {
+      animation: pulseGlow 4s ease-in-out infinite;
+    }
+    @keyframes gentleFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+    .float-slow {
+      animation: gentleFloat 5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="bg-background text-text-primary antialiased selection:bg-secondary-container selection:text-forest-dark min-h-screen flex flex-col">
+<!-- ============================================================
+       TOP NAVIGATION BAR (From Shared Components JSON)
+       ============================================================ -->
+<header class="docked full-width top-0 sticky z-50 bg-surface/80 dark:bg-forest-dark/80 backdrop-blur-md border-b border-border-subtle dark:border-forest-dark">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between h-20">
+<!-- Brand Logo / Product Name -->
+<a aria-label="StudyMate Home" class="flex items-center gap-3 transition-transform duration-200 active:scale-95 group" href="#hero">
+<img alt="StudyMate Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UGnplaHNFaBuykf99JNccqrlzsEb-yCENf3G_pKh6QxL7Z5i5L2EiE0z7kD5prZSOjS5rwazJ_ZWG09zx3SOf6rL1M1tD47liM8FjLFr_wpPvJ1FfVye2LeDL1G8npyq_qfHCq6A7ihcDNwynVCHiY_cFLdrxXABKy91pYBx3sC9Nx9_Zdolg98NMeACrjrwWpqJkEXMqWIFSLmL3bPA6duyB_dF5yrrYYq7gav6GZqGhR_KrCWJ4x4I8"/>
+<span class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed tracking-tight hidden sm:inline-block">StudyMate</span>
+</a>
+<!-- Desktop Nav Links -->
+<nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-8">
+<!-- Home (active) -->
+<a class="text-primary dark:text-primary-fixed font-medium border-b-2 border-tertiary-fixed-dim pb-1 font-label-button text-label-button" href="#hero">Home</a>
+<!-- Our Vision -->
+<a class="text-text-secondary dark:text-surface-variant font-normal hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-button text-label-button" href="#our-vision">Our Vision</a>
+<!-- Importance of Ilm -->
+<a class="text-text-secondary dark:text-surface-variant font-normal hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-button text-label-button" href="#importance-of-ilm">Importance of Ilm</a>
+<!-- Story of Two Friends -->
+<a class="text-text-secondary dark:text-surface-variant font-normal hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-button text-label-button" href="#story-ilm">Story of Two Friends</a>
+<!-- Founder -->
+<a class="text-text-secondary dark:text-surface-variant font-normal hover:text-primary dark:hover:text-primary-fixed transition-colors duration-200 font-label-button text-label-button" href="#founders">Co-Founders</a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-4">
+<!-- Desktop Primary CTA -->
+<a class="hidden md:inline-flex items-center justify-center bg-primary-container hover:bg-forest-dark text-on-primary font-label-button text-label-button px-5 py-2.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm border border-tertiary-fixed-dim/20" href="#our-vision">
+          Explore Our Vision
+        </a>
+<!-- Mobile Menu Trigger -->
+<button aria-label="Open Navigation Menu" class="md:hidden p-2 text-primary dark:text-primary-fixed hover:bg-surface-sage rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-tertiary-fixed-dim" id="openMobileDrawerBtn" type="button">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- ============================================================
+       MOBILE DRAWER (SideNavBar from Shared Components JSON)
+       ============================================================ -->
+<div class="fixed inset-0 bg-forest-dark/50 backdrop-blur-xs z-50 hidden opacity-0 transition-opacity duration-300" id="mobileDrawerOverlay">
+<div class="fixed inset-y-0 right-0 w-80 max-w-full z-50 bg-surface dark:bg-forest-dark border-l border-border-subtle dark:border-forest-dark shadow-lg dark:shadow-none translate-x-full transition-transform duration-300 ease-out flex flex-col h-full p-6 justify-between" id="mobileDrawerPanel">
+<!-- Drawer Header -->
+<div>
+<div class="flex items-center justify-between pb-6 border-b border-border-subtle dark:border-surface-variant/20">
+<div class="flex items-center gap-3">
+<img alt="StudyMate emblem rosette" class="h-9 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UGnplaHNFaBuykf99JNccqrlzsEb-yCENf3G_pKh6QxL7Z5i5L2EiE0z7kD5prZSOjS5rwazJ_ZWG09zx3SOf6rL1M1tD47liM8FjLFr_wpPvJ1FfVye2LeDL1G8npyq_qfHCq6A7ihcDNwynVCHiY_cFLdrxXABKy91pYBx3sC9Nx9_Zdolg98NMeACrjrwWpqJkEXMqWIFSLmL3bPA6duyB_dF5yrrYYq7gav6GZqGhR_KrCWJ4x4I8"/>
+<div>
+<div class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">StudyMate</div>
+<p class="font-body-sm text-body-sm text-text-secondary dark:text-surface-variant">Online Islamic Learning Initiative</p>
+</div>
+</div>
+<button aria-label="Close navigation menu" class="p-2 text-text-secondary hover:text-primary rounded-lg transition-colors" id="closeMobileDrawerBtn">
+<span class="material-symbols-outlined" data-icon="close">close</span>
+</button>
+</div>
+<!-- Drawer Links -->
+<nav aria-label="Mobile Navigation" class="mt-6 flex flex-col gap-2">
+<a class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-lg bg-surface-sage dark:bg-primary-container text-primary dark:text-on-primary-container font-medium font-label-button text-label-button" href="#hero">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+            Home
+          </a>
+<a class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-text-secondary dark:text-surface-variant font-normal hover:bg-surface-container-high dark:hover:bg-primary-container/40 transition-colors font-label-button text-label-button" href="#importance-of-ilm">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+            Importance of Ilm
+          </a>
+<a class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-text-secondary dark:text-surface-variant font-normal hover:bg-surface-container-high dark:hover:bg-primary-container/40 transition-colors font-label-button text-label-button" href="#story-ilm">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+            Story of Two Friends
+          </a>
+<a class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-text-secondary dark:text-surface-variant font-normal hover:bg-surface-container-high dark:hover:bg-primary-container/40 transition-colors font-label-button text-label-button" href="#our-vision">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+            Our Vision
+          </a>
+<a class="mobile-nav-link flex items-center gap-3 px-4 py-3 rounded-lg text-text-secondary dark:text-surface-variant font-normal hover:bg-surface-container-high dark:hover:bg-primary-container/40 transition-colors font-label-button text-label-button" href="#founders"><span class="material-symbols-outlined" data-icon="group">group</span>Co-Founders</a>
+</nav>
+</div>
+<!-- Drawer Bottom CTA -->
+<div class="pt-6 border-t border-border-subtle dark:border-surface-variant/20">
+<a class="mobile-nav-link w-full inline-flex items-center justify-center bg-primary-container hover:bg-forest-dark text-on-primary font-label-button text-label-button py-3 px-4 rounded-lg shadow-sm" href="#our-vision">
+          Explore Our Vision
+        </a>
+</div>
+</div>
+</div>
+<main class="flex-grow" id="main-content">
+<!-- ============================================================
+         1. HERO SECTION (#hero)
+         ============================================================ -->
+<section class="relative pt-12 pb-space-2xl md:pt-16 md:pb-space-3xl overflow-hidden bg-background" id="hero">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter-desktop items-center">
+<!-- Narrative Column (7 cols) -->
+<div class="lg:col-span-7 flex flex-col items-start space-y-6">
+<!-- Eyebrow Pill -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-surface-sage border border-secondary-fixed-dim/40 text-primary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-primary">A JOURNEY OF KNOWLEDGE &amp; FAITH</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-text-primary leading-tight font-medium">
+              Every Journey of Faith Begins with Knowledge.
+            </h1>
+<!-- Supporting Paragraph -->
+<p class="font-body-lg text-body-lg text-text-secondary max-w-2xl leading-relaxed">
+              Our vision is to make meaningful Islamic education accessible to children and adults, helping every learner grow in knowledge, understanding, and faith.
+            </p>
+<!-- Dual CTAs -->
+<div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto">
+<a class="inline-flex items-center justify-center bg-primary-container hover:bg-forest-dark text-on-primary font-label-button text-label-button px-7 py-3.5 rounded-lg shadow-sm transition-all duration-200 active:scale-95 group" href="#our-vision">
+<span class="">Discover Our Vision</span>
+<span class="material-symbols-outlined ml-2 transition-transform duration-200 group-hover:translate-x-1" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center bg-transparent hover:bg-surface-sage/60 text-primary border border-primary-container font-label-button text-label-button px-7 py-3.5 rounded-lg transition-all duration-200" href="#founders">Meet Our Founders</a>
+</div>
+<!-- Gentle reassurance footnotes -->
+<div class="pt-4 flex items-center gap-6 text-text-secondary border-t border-border-subtle w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="verified">verified</span>
+<span class="font-body-sm text-body-sm">Scholarly Authenticity</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-tertiary-fixed-dim" data-icon="favorite">favorite</span>
+<span class="font-body-sm text-body-sm">Gentle Pedagogy</span>
+</div>
+</div>
+</div>
+<!-- Hero Media Column (5 cols) -->
+<div class="lg:col-span-5 relative flex justify-center">
+<!-- Background Rosette Ambient Glow -->
+<div class="absolute -inset-4 bg-accent-gold-light/40 rounded-full blur-2xl -z-10 transform scale-95 pointer-events-none"></div>
+<!-- Arch Media Frame -->
+<div class="relative w-full max-w-md p-2 rounded-[268px_268px_20px_20px] bg-surface-white border border-border-subtle shadow-md">
+<div class="relative overflow-hidden arch-mask border border-tertiary-fixed-dim/30 bg-surface-container">
+<img alt="Open Noble Quran displayed gracefully upon a carved wooden rihal stand alongside an antique brass lantern illuminating a tranquil study setting" class="w-full h-[440px] md:h-[480px] object-cover object-center transform hover:scale-102 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida/AEtjO1UNZbA40xF0OxgxSbtpQ_ldB6dhnGTNs9qMd-mE9tWfP8uE65TaoGnmiwcxdCmGl02kZ0xw3ayPWaBaSCpmaoolb_Jc2Gf8FW6bF4VsITV1zE5TCOlpbamHLn8fYuExLApxh5pGg5Zk4bhSzuR0GTUNnld6rnSGRcFIbFmWJzGCixAqvkLXBBZngLkYq9W5c78NF-tHRx4hmdCj8GChK1Mrb1BVq_3q759edn_1fyf3-3XRZdf65DgYT1BZ"/>
+<!-- Subtle Top Gradient Scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-forest-dark/40 via-transparent to-transparent pointer-events-none"></div>
+</div>
+<!-- Reassurance Floating Badge -->
+<div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-11/12 max-w-xs bg-surface-white/95 backdrop-blur-md border border-border-subtle px-4 py-2.5 rounded-full shadow-md text-center flex items-center justify-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<p class="font-body-sm text-body-sm text-text-primary font-medium tracking-wide">
+                  Authentic • Sincere • Lifelong
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         2. IMPORTANCE OF ILM SECTION (#importance-of-ilm)
+         ============================================================ -->
+<section class="py-space-2xl md:py-space-3xl bg-surface-container-low border-y border-border-subtle relative" id="importance-of-ilm">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Header Text -->
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-gold-light border border-tertiary-fixed-dim/50 text-tertiary mb-3">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest">THE VALUE OF KNOWLEDGE</span>
+</div>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-text-primary mb-4 font-medium">
+            Ilm is the Light That Guides Us
+          </h2>
+<p class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-text-secondary leading-relaxed">
+            In Islam, seeking knowledge is not merely an academic endeavor—it is a sacred obligation and a path toward spiritual clarity. It illuminates understanding, cultivates righteous character, and safeguards sacred wisdom for future generations.
+          </p>
+</div>
+<!-- Sacred Quranic Verse Centerpiece Panel -->
+<div class="max-w-4xl mx-auto bg-forest-dark text-surface-bright rounded-2xl p-8 md:p-14 relative overflow-hidden shadow-lg border border-tertiary-fixed-dim/40">
+<!-- Geometric Background Ornamentation -->
+<div class="absolute inset-0 arabesque-subtle opacity-20 pointer-events-none"></div>
+<!-- Inner Double Hairline Frame -->
+<div class="relative z-10 border border-tertiary-fixed-dim/30 rounded-xl p-6 md:p-10 text-center">
+<div class="flex justify-center mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="auto_stories">auto_stories</span>
+</div>
+<!-- Arabic Calligraphy with RTL -->
+<div class="font-arabic text-3xl sm:text-4xl md:text-5xl leading-loose font-normal text-surface-white mb-6 tracking-wide drop-shadow-sm" dir="rtl" lang="ar">
+              رَبِّ زِدْنِي عِلْمًا
+            </div>
+<!-- Ornamental Gold Divider -->
+<div class="flex items-center justify-center gap-3 my-6">
+<div class="w-16 h-px bg-tertiary-fixed-dim/40"></div>
+<span class="text-tertiary-fixed text-sm">✦</span>
+<div class="w-16 h-px bg-tertiary-fixed-dim/40"></div>
+</div>
+<!-- Translation -->
+<p class="font-quran-verse-mobile md:font-quran-verse text-lg md:text-2xl text-accent-gold-light italic max-w-xl mx-auto leading-relaxed mb-3">
+              “My Lord, increase me in knowledge.”
+            </p>
+<!-- Citation -->
+<div class="font-label-button text-label-button text-tertiary-fixed uppercase tracking-wider text-xs md:text-sm">
+              Surah Taha • 20:114
+            </div>
+</div>
+</div>
+<!-- Three Reflective Pillars Beneath Verse -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-12">
+<div class="bg-surface-white p-6 rounded-xl border border-border-subtle hover:border-tertiary-fixed-dim/50 transition-all duration-200 shadow-sm flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-surface-sage flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="light_mode">light_mode</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2 font-medium">Clarity in Practice</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+              Moving beyond rote ritual into heartfelt worship, guided by clear understanding of sacred commandments.
+            </p>
+</div>
+<div class="bg-surface-white p-6 rounded-xl border border-border-subtle hover:border-tertiary-fixed-dim/50 transition-all duration-200 shadow-sm flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-surface-sage flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="self_improvement">self_improvement</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2 font-medium">Elevation of Character</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+              True knowledge softens the heart, refining akhlaaq (manners) toward family, teachers, and communities.
+            </p>
+</div>
+<div class="bg-surface-white p-6 rounded-xl border border-border-subtle hover:border-tertiary-fixed-dim/50 transition-all duration-200 shadow-sm flex flex-col items-center text-center">
+<div class="w-12 h-12 rounded-full bg-surface-sage flex items-center justify-center text-primary mb-4">
+<span class="material-symbols-outlined" data-icon="family_restroom">family_restroom</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-2 font-medium">Preservation for Generations</h3>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">
+              Imparting an unbroken chain of truth, values, and devotion seamlessly from parents to youth.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         2.5 CINEMATIC INTERACTIVE STORYTELLING SECTION (#story-ilm)
+         ============================================================ -->
+<section class="py-space-2xl md:py-space-3xl bg-background relative overflow-hidden" id="story-ilm">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -top-32 right-1/4 w-96 h-96 bg-accent-gold-light/40 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute -bottom-32 left-10 w-96 h-96 bg-surface-sage/50 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Story Header -->
+<div class="text-center max-w-3xl mx-auto mb-10 md:mb-14">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-accent-gold-light border border-tertiary-fixed-dim/60 text-tertiary mb-3.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest font-semibold">AN ILLUSTRATED STORY OF SIBLINGS IN FAITH</span>
+</div>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-text-primary mb-3.5 font-medium">
+        Two Friends. One Journey Towards Knowledge.
+      </h2>
+<p class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-text-secondary leading-relaxed">
+        A visual reflection on how learning Ilm-e-Deen nurtures gentle character, clarity of heart, and opens doors of grace for everyone.
+      </p>
+<!-- Prophetic Hadith Citation Banner -->
+<div class="mt-6 inline-flex flex-col sm:flex-row items-center gap-3 px-5 py-2.5 rounded-xl bg-surface-container border border-border-subtle text-primary">
+<div class="font-arabic text-lg md:text-xl font-medium" dir="rtl" lang="ar">طَلَبُ الْعِلْمِ فَرِيضَةٌ عَلَىٰ كُلِّ مُسْلِمٍ</div>
+<span class="hidden sm:inline text-tertiary-fixed-dim">•</span>
+<div class="font-body-sm text-body-sm text-text-secondary italic">
+          “Seeking knowledge is an obligation upon every Muslim.” <span class="font-medium text-text-primary not-italic text-xs ml-1">(Sunan Ibn Majah 224)</span>
+</div>
+</div>
+</div>
+<!-- Story Interactive Theatre Container -->
+<div class="bg-surface-white rounded-3xl border border-border-subtle shadow-xl overflow-hidden">
+<!-- Scene Navigation Tabs Header -->
+<div class="border-b border-border-subtle bg-surface-container-low px-4 sm:px-8 py-4">
+<div class="flex items-center justify-between gap-4 flex-wrap">
+<!-- Step Switchers -->
+<div class="flex items-center gap-2 sm:gap-3 overflow-x-auto py-1 w-full lg:w-auto scrollbar-none" id="storyTabs">
+<!-- Scene 1 Tab -->
+<button class="scene-tab-btn flex items-center gap-2.5 px-4 py-2 rounded-full text-left transition-all duration-200 bg-primary-container text-on-primary shadow-sm" data-scene="1">
+<span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-surface-white text-forest-dark">1</span>
+<span class="font-label-button text-xs sm:text-sm whitespace-nowrap font-medium">Two Different Journeys</span>
+</button>
+<!-- Scene 2 Tab -->
+<button class="scene-tab-btn flex items-center gap-2.5 px-4 py-2 rounded-full text-left transition-all duration-200 bg-surface text-text-secondary hover:text-text-primary border border-border-subtle" data-scene="2">
+<span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-surface-container text-text-secondary">2</span>
+<span class="font-label-button text-xs sm:text-sm whitespace-nowrap font-medium">Light of Understanding</span>
+</button>
+<!-- Scene 3 Tab -->
+<button class="scene-tab-btn flex items-center gap-2.5 px-4 py-2 rounded-full text-left transition-all duration-200 bg-surface text-text-secondary hover:text-text-primary border border-border-subtle" data-scene="3">
+<span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-surface-container text-text-secondary">3</span>
+<span class="font-label-button text-xs sm:text-sm whitespace-nowrap font-medium">A Moment That Matters</span>
+</button>
+<!-- Scene 4 Tab -->
+<button class="scene-tab-btn flex items-center gap-2.5 px-4 py-2 rounded-full text-left transition-all duration-200 bg-surface text-text-secondary hover:text-text-primary border border-border-subtle" data-scene="4">
+<span class="w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-surface-container text-text-secondary">4</span>
+<span class="font-label-button text-xs sm:text-sm whitespace-nowrap font-medium">The Door to Knowledge</span>
+</button>
+</div>
+<!-- Auto-Play & Stepper Controls Cluster -->
+<div class="flex items-center gap-2 sm:gap-3 w-full lg:w-auto justify-between lg:justify-end border-t lg:border-t-0 border-border-subtle pt-2 lg:pt-0">
+<!-- Autoplay Toggle Button -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-border-subtle bg-surface hover:bg-surface-sage text-text-secondary text-xs font-label-button transition-colors" id="togglePlayBtn">
+<span class="material-symbols-outlined text-sm" data-icon="play_arrow" id="playIcon">play_arrow</span>
+<span id="playLabel">Auto-play</span>
+</button>
+<!-- Stepper Buttons -->
+<div class="inline-flex items-center gap-1">
+<button aria-label="Previous scene" class="p-1.5 rounded-lg border border-border-subtle bg-surface hover:bg-surface-sage text-text-primary transition-colors disabled:opacity-40 disabled:cursor-not-allowed" id="prevSceneBtn">
+<span class="material-symbols-outlined text-lg" data-icon="chevron_left">chevron_left</span>
+</button>
+<button aria-label="Next scene" class="p-1.5 rounded-lg border border-border-subtle bg-surface hover:bg-surface-sage text-text-primary transition-colors disabled:opacity-40 disabled:cursor-not-allowed" id="nextSceneBtn">
+<span class="material-symbols-outlined text-lg" data-icon="chevron_right">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Animated Progress Line -->
+<div class="w-full bg-border-subtle h-1 rounded-full mt-3 overflow-hidden">
+<div class="h-full bg-primary-container transition-all duration-500 rounded-full" id="storyProgressBar" style="width: 25%;"></div>
+</div>
+</div>
+<!-- Main Stage Grid (Illustration Left / Story Narrative Right) -->
+<div class="p-6 md:p-10 lg:p-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Left Column: Rich Animated 2D Vector Illustration Artboard (7 cols) -->
+<div class="lg:col-span-7">
+<div class="relative rounded-2xl overflow-hidden border border-border-subtle bg-gradient-to-b from-[#FAF7F0] via-[#F4EFE6] to-[#E9E4D8] shadow-inner p-4 sm:p-6 min-h-[380px] sm:min-h-[440px] flex items-center justify-center">
+<!-- Ambient Islamic Geometric Watermark Backdrop -->
+<div class="absolute inset-0 arabesque-subtle opacity-30 pointer-events-none"></div>
+<!-- Top Architectural Arch Detail -->
+<div class="absolute top-0 inset-x-0 h-10 border-b border-tertiary-fixed-dim/20 bg-surface-white/40 backdrop-blur-xs flex items-center justify-center">
+<div class="text-[11px] font-label-button text-secondary tracking-widest uppercase flex items-center gap-2">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+<span id="illustrationSceneLabel">Act I • Separate Paths</span>
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed"></span>
+</div>
+</div>
+<!-- Dynamic SVG Art Container -->
+<div class="w-full max-w-xl transition-all duration-500 transform" id="illustrationContainer">
+<!-- SCENE 1 SVG: TWO DIFFERENT JOURNEYS -->
+<svg class="scene-svg w-full h-auto drop-shadow-sm" fill="none" id="svgScene1" viewbox="0 0 540 340" xmlns="http://www.w3.org/2000/svg">
+<!-- Ground / Horizon Floor -->
+<rect fill="#E2DAD0" height="40" rx="10" width="500" x="20" y="270"></rect>
+<path d="M40 270 Q270 260 500 270" stroke="#C5BDB0" stroke-dasharray="4 4" stroke-width="2"></path>
+<!-- Background Architectural Arch Silhouettes -->
+<path d="M50 270 V130 Q120 70 190 130 V270" fill="#ECE5DA" opacity="0.7"></path>
+<path d="M350 270 V130 Q420 70 490 130 V270" fill="#ECE5DA" opacity="0.7"></path>
+<!-- Hanging Lantern on Zayd's side -->
+<line stroke="#A78F56" stroke-width="2" x1="120" x2="120" y1="20" y2="70"></line>
+<path d="M110 70 H130 L135 90 H105 Z" fill="#D6B876"></path>
+<rect class="ambient-lantern" fill="#FFE59E" height="24" rx="3" width="16" x="112" y="80"></rect>
+<circle class="ambient-lantern" cx="120" cy="92" fill="#FFE8A3" opacity="0.3" r="18"></circle>
+<!-- ZAYD (Left) - Peaceful student sitting with rihal bookstand -->
+<!-- Body & Robe -->
+<path d="M120 180 Q105 195 100 250 H160 Q155 195 140 180 Z" fill="#145B46"></path>
+<!-- Inner collar -->
+<path d="M125 180 L130 195 L135 180 Z" fill="#FFFFFF"></path>
+<!-- Head & Cap (Kufi) -->
+<circle cx="130" cy="155" fill="#ECCDB1" r="16"></circle>
+<path d="M114 150 C114 138 146 138 146 150 Z" fill="#FFFFFF"></path>
+<circle cx="127" cy="155" fill="#3A2E2B" r="1.5"></circle>
+<path d="M127 162 Q130 165 133 162" stroke="#7A5643" stroke-linecap="round" stroke-width="1.5"></path>
+<!-- Gentle Hands holding pages -->
+<ellipse cx="120" cy="225" fill="#ECCDB1" rx="5" ry="4"></ellipse>
+<ellipse cx="140" cy="225" fill="#ECCDB1" rx="5" ry="4"></ellipse>
+<!-- Traditional Carved Wooden Rihal & Quran -->
+<path d="M105 250 L130 230 L155 250" stroke="#87532A" stroke-linecap="round" stroke-width="5"></path>
+<path d="M105 230 L130 250 L155 230" stroke="#87532A" stroke-linecap="round" stroke-width="5"></path>
+<!-- Open Book pages emitting gentle warm light -->
+<path d="M110 226 C120 220 130 224 130 228 C130 224 140 220 150 226 L148 238 C140 232 130 234 130 238 C130 234 120 232 112 238 Z" fill="#FAF7F0" stroke="#C2A562" stroke-width="1.5"></path>
+<!-- FARHAN (Right) - Kind-hearted, standing thoughtfully with questions in mind -->
+<!-- Body & Robe -->
+<path d="M400 160 Q385 180 380 270 H440 Q435 180 420 160 Z" fill="#D9CBB6"></path>
+<path d="M405 160 L410 180 L415 160 Z" fill="#FFFFFF"></path>
+<!-- Head & Curly hair/hairline -->
+<circle cx="410" cy="135" fill="#ECCDB1" r="16"></circle>
+<path d="M394 130 C394 116 426 116 426 130 C426 122 394 122 394 130 Z" fill="#3D3028"></path>
+<circle cx="406" cy="135" fill="#3A2E2B" r="1.5"></circle>
+<path d="M406 142 Q410 144 414 142" stroke="#7A5643" stroke-linecap="round" stroke-width="1.5"></path>
+<!-- Thoughtful Hand on chin -->
+<path d="M410 180 L412 150" stroke="#ECCDB1" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="412" cy="148" fill="#ECCDB1" r="4"></circle>
+<!-- Speech / Thought Bubble for Farhan -->
+<g class="float-slow">
+<rect fill="#FFFFFF" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))" height="46" rx="14" stroke="#D1C7B7" stroke-width="1.5" width="160" x="330" y="55"></rect>
+<path d="M410 101 L405 110 L415 101 Z" fill="#FFFFFF"></path>
+<text fill="#4B5563" font-family="'Inter', sans-serif" font-size="11" font-weight="500" text-anchor="middle" x="410" y="75">“I want to understand...”</text>
+<text fill="#9CA3AF" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle" x="410" y="90">seeking direction &amp; peace</text>
+</g>
+<!-- Speech / Light Glow for Zayd -->
+<g class="float-slow">
+<rect fill="#FFFFFF" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))" height="46" rx="14" stroke="#D6B876" stroke-width="1.5" width="160" x="50" y="55"></rect>
+<path d="M130 101 L135 110 L125 101 Z" fill="#FFFFFF"></path>
+<text fill="#145B46" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="130" y="75">Blessed with a Teacher</text>
+<text fill="#66716A" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle" x="130" y="90">steady, guided growth</text>
+</g>
+<!-- Center subtle dotted bridge of destiny -->
+<path d="M210 200 C270 170 270 230 330 200" opacity="0.6" stroke="#C2A562" stroke-dasharray="6 6" stroke-width="2"></path>
+<circle cx="270" cy="200" fill="#FAF7F0" r="14" stroke="#C2A562" stroke-width="1.5"></circle>
+<text fill="#654D1B" font-family="'Playfair Display', Georgia" font-size="12" font-weight="bold" text-anchor="middle" x="270" y="204">✦</text>
+</svg>
+<!-- SCENE 2 SVG: THE LIGHT OF UNDERSTANDING -->
+<svg class="scene-svg hidden w-full h-auto drop-shadow-sm" fill="none" id="svgScene2" viewbox="0 0 540 340" xmlns="http://www.w3.org/2000/svg">
+<!-- Sanctified Sanctuary / Madrasah Backdrop -->
+<rect fill="#E2DAD0" height="40" rx="10" width="500" x="20" y="270"></rect>
+<path d="M120 270 V100 Q270 30 420 100 V270" fill="#F4EFE6" stroke="#E3DACB" stroke-width="2"></path>
+<!-- Islamic Lattice Screen (Mashrabiya) Window -->
+<rect fill="#E7DEC8" height="90" opacity="0.6" rx="50" width="100" x="220" y="80"></rect>
+<circle cx="270" cy="115" r="28" stroke="#CBB98C" stroke-width="1.5"></circle>
+<line stroke="#CBB98C" stroke-width="1.5" x1="270" x2="270" y1="87" y2="143"></line>
+<line stroke="#CBB98C" stroke-width="1.5" x1="242" x2="298" y1="115" y2="115"></line>
+<!-- USTAAD (Left) - Wise Elderly Teacher with Shawl -->
+<path d="M170 160 Q145 180 135 270 H225 Q215 180 195 160 Z" fill="#3C4841"></path>
+<path d="M150 190 Q180 230 210 190" fill="none" stroke="#D1C2A5" stroke-linecap="round" stroke-width="8"></path>
+<!-- Ustaad head & white beard -->
+<circle cx="180" cy="135" fill="#ECCDB1" r="17"></circle>
+<path d="M165 142 Q180 170 195 142 Z" fill="#FFFFFF"></path>
+<path d="M163 130 C163 115 197 115 197 130 Z" fill="#FAF7F0"></path>
+<!-- Teaching gesture: hand raised gently -->
+<path d="M210 200 L235 185" stroke="#ECCDB1" stroke-linecap="round" stroke-width="4"></path>
+<circle cx="237" cy="184" fill="#ECCDB1" r="4"></circle>
+<!-- ZAYD (Right) - Listening reverently with notebook and pen -->
+<path d="M350 175 Q335 195 325 270 H395 Q385 195 370 175 Z" fill="#145B46"></path>
+<circle cx="360" cy="150" fill="#ECCDB1" r="16"></circle>
+<path d="M344 145 C344 133 376 133 376 145 Z" fill="#FFFFFF"></path>
+<circle cx="355" cy="150" fill="#3A2E2B" r="1.5"></circle>
+<ellipse cx="335" cy="225" fill="#ECCDB1" rx="5" ry="4"></ellipse>
+<!-- Shared Quran Table in Center with Golden Emanating Rays -->
+<rect fill="#87532A" height="30" rx="4" width="70" x="235" y="240"></rect>
+<path d="M245 235 C255 230 270 232 270 237 C270 232 285 230 295 235 L292 245 C282 240 270 242 270 246 C270 242 258 240 248 245 Z" fill="#FAF7F0" stroke="#C2A562" stroke-width="1.5"></path>
+<!-- Golden Heart Radiance / Noor of Ilm -->
+<circle class="ambient-lantern" cx="270" cy="210" fill="#FFEAA7" opacity="0.35" r="26"></circle>
+<path d="M270 195 L272 205 L282 207 L272 212 L270 222 L268 212 L258 207 L268 205 Z" fill="#D6B876"></path>
+<!-- Floating Dialogue Box -->
+<g class="float-slow">
+<rect fill="#FFFFFF" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))" height="42" rx="10" stroke="#145B46" stroke-width="1.5" width="230" x="220" y="30"></rect>
+<text fill="#145B46" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="335" y="47">“Knowledge is not merely words...”</text>
+<text fill="#4B5563" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="middle" x="335" y="61">“...it is light that softens the soul with adab.”</text>
+</g>
+</svg>
+<!-- SCENE 3 SVG: A MOMENT THAT MATTERS -->
+<svg class="scene-svg hidden w-full h-auto drop-shadow-sm" fill="none" id="svgScene3" viewbox="0 0 540 340" xmlns="http://www.w3.org/2000/svg">
+<!-- Marketplace / Neighborhood Pavement -->
+<rect fill="#D8CFBF" height="40" rx="10" width="500" x="20" y="270"></rect>
+<!-- Market Stall Canopy in Background -->
+<path d="M40 90 L260 90 L240 130 L60 130 Z" fill="#9E3D31" opacity="0.75"></path>
+<path d="M60 90 L90 130 M120 90 L140 130 M180 90 L195 130" opacity="0.4" stroke="#FFFFFF" stroke-width="2"></path>
+<line stroke="#87532A" stroke-width="4" x1="50" x2="50" y1="130" y2="270"></line>
+<line stroke="#87532A" stroke-width="4" x1="245" x2="245" y1="130" y2="270"></line>
+<!-- Fruit baskets & spilled oranges indicating accident/misunderstanding -->
+<ellipse cx="140" cy="272" fill="#9E693D" rx="28" ry="10"></ellipse>
+<circle cx="160" cy="275" fill="#E67E22" r="7"></circle>
+<circle cx="178" cy="278" fill="#E67E22" r="7"></circle>
+<circle cx="195" cy="274" fill="#E67E22" r="7"></circle>
+<!-- Agitated Merchant / Passerby (Left) -->
+<path d="M100 170 Q85 190 80 270 H140 Q135 190 120 170 Z" fill="#6B5B52"></path>
+<circle cx="110" cy="145" fill="#ECCDB1" r="16"></circle>
+<path d="M125 185 L145 170" stroke="#ECCDB1" stroke-linecap="round" stroke-width="4"></path>
+<!-- ZAYD (Center) - Calm, smiling gently, hand on heart, helping clean with patience -->
+<path d="M240 170 Q225 190 220 270 H280 Q275 190 260 170 Z" fill="#145B46"></path>
+<circle cx="250" cy="145" fill="#ECCDB1" r="16"></circle>
+<path d="M234 140 C234 128 266 128 266 140 Z" fill="#FFFFFF"></path>
+<circle cx="247" cy="145" fill="#3A2E2B" r="1.5"></circle>
+<path d="M246 152 Q250 155 254 152" stroke="#7A5643" stroke-linecap="round" stroke-width="1.5"></path>
+<!-- Hand placed calmly over chest (Islamic greeting / humility) -->
+<path d="M240 190 Q252 182 258 190" stroke="#ECCDB1" stroke-linecap="round" stroke-width="5"></path>
+<!-- FARHAN (Right) - Watching from distance with profound admiration -->
+<path d="M430 160 Q415 180 410 270 H470 Q465 180 450 160 Z" fill="#D9CBB6"></path>
+<circle cx="440" cy="135" fill="#ECCDB1" r="16"></circle>
+<path d="M424 130 C424 116 456 116 456 130 Z" fill="#3D3028"></path>
+<circle cx="436" cy="135" fill="#3A2E2B" r="1.5"></circle>
+<!-- Speech Bubble from Zayd responding with grace -->
+<g class="float-slow">
+<rect fill="#FFFFFF" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))" height="46" rx="12" stroke="#145B46" stroke-width="1.5" width="190" x="180" y="60"></rect>
+<path d="M250 106 L246 116 L256 106 Z" fill="#FFFFFF"></path>
+<text fill="#145B46" font-family="'Inter', sans-serif" font-size="11" font-weight="600" text-anchor="middle" x="275" y="79">“May Allah bless you, my brother.”</text>
+<text fill="#4B5563" font-family="'Inter', sans-serif" font-size="9.5" text-anchor="middle" x="275" y="94">Gentle smile • Diffusing tension</text>
+</g>
+<!-- Farhan's Wonderment Thought Bubble -->
+<g class="float-slow">
+<rect fill="#FFFDF8" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))" height="48" rx="12" stroke="#D6B876" stroke-width="1.5" width="160" x="360" y="45"></rect>
+<circle cx="410" cy="105" fill="#D6B876" r="3"></circle>
+<circle cx="420" cy="115" fill="#D6B876" r="2"></circle>
+<text fill="#654D1B" font-family="'Inter', sans-serif" font-size="10.5" font-weight="600" text-anchor="middle" x="440" y="65">“How is he so calm?”</text>
+<text fill="#786B58" font-family="'Inter', sans-serif" font-size="9" text-anchor="middle" x="440" y="80">Deeply touched by his manners</text>
+</g>
+</svg>
+<!-- SCENE 4 SVG: THE DOOR TO KNOWLEDGE -->
+<svg class="scene-svg hidden w-full h-auto drop-shadow-sm" fill="none" id="svgScene4" viewbox="0 0 540 340" xmlns="http://www.w3.org/2000/svg">
+<!-- Grand Sacred Study Hall with High Arch & Warm Lanterns -->
+<rect fill="#E2DAD0" height="40" rx="10" width="500" x="20" y="270"></rect>
+<path d="M80 270 V90 Q270 20 460 90 V270" fill="#F8F4EC" stroke="#DEC896" stroke-width="2"></path>
+<!-- Twin Lanterns -->
+<line stroke="#A78F56" stroke-width="2" x1="140" x2="140" y1="20" y2="70"></line>
+<rect class="ambient-lantern" fill="#FFE59E" height="22" rx="3" width="16" x="132" y="70"></rect>
+<line stroke="#A78F56" stroke-width="2" x1="400" x2="400" y1="20" y2="70"></line>
+<rect class="ambient-lantern" fill="#FFE59E" height="22" rx="3" width="16" x="392" y="70"></rect>
+<!-- Ustaad at Head of Circle (Center Top) -->
+<path d="M270 140 Q250 160 240 210 H300 Q290 160 270 140 Z" fill="#3C4841"></path>
+<circle cx="270" cy="120" fill="#ECCDB1" r="14"></circle>
+<path d="M260 126 Q270 142 280 126 Z" fill="#FFFFFF"></path>
+<path d="M256 115 C256 103 284 103 284 115 Z" fill="#FAF7F0"></path>
+<!-- ZAYD & FARHAN Sitting Side by Side as Brothers in Knowledge -->
+<!-- Zayd (Left) -->
+<path d="M190 185 Q175 200 165 270 H235 Q225 200 210 185 Z" fill="#145B46"></path>
+<circle cx="200" cy="160" fill="#ECCDB1" r="15"></circle>
+<path d="M185 155 C185 144 215 144 215 155 Z" fill="#FFFFFF"></path>
+<!-- Farhan (Right) - Now peacefully seated, smiling with his own book -->
+<path d="M330 185 Q315 200 305 270 H375 Q365 200 350 185 Z" fill="#4B6B60"></path>
+<circle cx="340" cy="160" fill="#ECCDB1" r="15"></circle>
+<path d="M325 155 C325 144 355 144 355 155 Z" fill="#D9CBB6"></path>
+<!-- Warm handshake / arm on shoulder of brotherhood -->
+<path d="M230 210 Q270 195 310 210" stroke="#ECCDB1" stroke-linecap="round" stroke-width="4"></path>
+<!-- Two Open Books on Rihals -->
+<path d="M180 260 L195 245 L210 260" stroke="#87532A" stroke-linecap="round" stroke-width="4"></path>
+<path d="M182 243 C189 239 195 242 195 245 C195 242 201 239 208 243" fill="#FAF7F0" stroke="#C2A562" stroke-width="2"></path>
+<path d="M330 260 L345 245 L360 260" stroke="#87532A" stroke-linecap="round" stroke-width="4"></path>
+<path d="M332 243 C339 239 345 242 345 245 C345 242 351 239 358 243" fill="#FAF7F0" stroke="#C2A562" stroke-width="2"></path>
+<!-- Shared Blessing Radiance at Center -->
+<circle class="ambient-lantern" cx="270" cy="235" fill="#FFEAA7" opacity="0.4" r="30"></circle>
+<text fill="#145B46" font-family="'Noto Naskh Arabic', serif" font-size="16" font-weight="bold" text-anchor="middle" x="270" y="240">بِسْمِ اللَّهِ</text>
+<!-- Overhead Banner Card -->
+<g class="float-slow">
+<rect fill="#FFFFFF" filter="drop-shadow(0 2px 6px rgba(0,0,0,0.08))" height="42" rx="12" stroke="#D6B876" stroke-width="1.5" width="250" x="145" y="32"></rect>
+<text fill="#145B46" font-family="'Playfair Display', Georgia" font-size="13" font-weight="600" text-anchor="middle" x="270" y="50">United on the Sacred Path</text>
+<text fill="#66716A" font-family="'Inter', sans-serif" font-size="10" text-anchor="middle" x="270" y="64">“Knowledge is a gift meant for everyone.”</text>
+</g>
+</svg>
+</div>
+<!-- Replay Badge Floating Bottom-Right -->
+<button class="absolute bottom-3 right-3 text-xs font-label-button text-primary hover:text-forest-dark bg-surface-white/90 backdrop-blur-xs px-3 py-1.5 rounded-full border border-border-subtle shadow-xs flex items-center gap-1.5 transition-colors" id="replayStoryBtn">
+<span class="material-symbols-outlined text-sm" data-icon="replay">replay</span>
+<span>Replay Story</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Synchronized Narrative Card (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between space-y-6">
+<!-- Dynamic Story Text Panel -->
+<div class="space-y-4" id="narrativeCard">
+<!-- Scene Identifier Badge -->
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-md text-xs font-bold bg-primary-container text-on-primary" id="sceneBadgeNum">Scene 1 of 4</span>
+<span class="font-label-eyebrow text-xs uppercase tracking-wider text-tertiary" id="sceneTheme">The Contrast of Opportunities</span>
+</div>
+<!-- Scene Main Title -->
+<h3 class="font-headline-md text-headline-md text-text-primary font-medium leading-snug" id="sceneTitle">
+                Two Friends, Two Different Journeys
+              </h3>
+<!-- Narrative Body Paragraph -->
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed" id="sceneNarrative">
+                Meet <span class="text-text-primary font-medium">Zayd</span> and <span class="text-text-primary font-medium">Farhan</span>. They share an enduring bond of friendship, yet their journeys of learning look very different. Zayd has been blessed with an opportunity to sit consistently with a trusted teacher, absorbing the rhythm of the Quran. Farhan is sincere, respectful, and eager to do good—yet life and circumstances left him with limited access to structured Islamic education. Farhan often wonders quietly how to find authentic clarity.
+              </p>
+<!-- Highlighted Dialogue / Wisdom Quote Box -->
+<div class="p-4 rounded-xl bg-surface-sage/50 border border-secondary-fixed-dim/40 space-y-1.5" id="sceneQuoteBox">
+<div class="flex items-center gap-1.5 text-xs text-primary font-medium">
+<span class="material-symbols-outlined text-sm" data-icon="format_quote">format_quote</span>
+<span id="quoteSpeaker">Farhan’s Quiet Reflection</span>
+</div>
+<p class="font-body-md text-text-primary italic text-sm" id="sceneQuote">
+                  “I want to understand the words of my Creator, but where should someone like me begin?”
+                </p>
+</div>
+<!-- Key Takeaway Pill -->
+<div class="pt-2 flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span>
+<p class="font-body-sm text-xs md:text-sm text-text-secondary font-medium" id="sceneTakeaway">
+                  Takeaway: Every sincere seeker deserves a welcoming, dignified door to sacred knowledge.
+                </p>
+</div>
+</div>
+<!-- Bottom Story Action & Navigation Controls -->
+<div class="pt-6 border-t border-border-subtle flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4">
+<div class="flex items-center gap-2 text-xs text-text-secondary">
+<span class="material-symbols-outlined text-base text-tertiary" data-icon="touch_app">touch_app</span>
+<span>Click tabs or controls above to advance scenes</span>
+</div>
+<div class="flex items-center gap-3">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-primary-container hover:bg-forest-dark text-on-primary font-label-button text-xs md:text-sm px-5 py-2.5 rounded-lg shadow-sm transition-all duration-200 active:scale-95" id="cardNextBtn">
+<span id="cardNextLabel">Continue to Scene 2</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         3. OUR VISION SECTION (#our-vision)
+         ============================================================ -->
+<section class="py-space-2xl md:py-space-3xl bg-forest-dark text-surface relative overflow-hidden" id="our-vision">
+<!-- Watermark Islamic Arabesque Background Pattern -->
+<div class="absolute inset-0 arabesque-subtle opacity-15 pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Narrative Left (7 cols) -->
+<div class="lg:col-span-7 space-y-6">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-tertiary-container/40 border border-tertiary-fixed-dim/40 text-tertiary-fixed">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest">OUR VISION</span>
+</div>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-surface-white font-medium leading-tight">
+              Making Islamic Learning Accessible to Everyone
+            </h2>
+<p class="font-body-lg text-body-lg text-surface-variant leading-relaxed">
+              StudyMate is being built around a simple vision: to help make Islamic learning more approachable for children and adults. We hope to create a learning environment where knowledge is shared with care, teachers are treated with respect, and learners can grow at a steady pace.
+            </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="flex items-start gap-3 p-4 rounded-lg bg-surface/5 border border-surface/10">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mt-0.5" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="font-label-button text-label-button text-surface-white font-medium">Reverence &amp; Care</h4>
+<p class="font-body-sm text-body-sm text-surface-variant/80 mt-1">Honoring sacred tradition with contemporary clarity.</p>
+</div>
+</div>
+<div class="flex items-start gap-3 p-4 rounded-lg bg-surface/5 border border-surface/10">
+<span class="material-symbols-outlined text-tertiary-fixed-dim mt-0.5" data-icon="check_circle">check_circle</span>
+<div>
+<h4 class="font-label-button text-label-button text-surface-white font-medium">Gentle Pacing</h4>
+<p class="font-body-sm text-body-sm text-surface-variant/80 mt-1">Nurturing steady consistency over hurried memorization.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Architectural Quote Card Right (5 cols) -->
+<div class="lg:col-span-5">
+<div class="relative bg-surface/5 backdrop-blur-sm border border-tertiary-fixed-dim/30 rounded-2xl p-8 md:p-10 shadow-xl">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed-dim/20 flex items-center justify-center text-tertiary-fixed mb-6">
+<span class="material-symbols-outlined text-2xl" data-icon="format_quote">format_quote</span>
+</div>
+<blockquote class="font-headline-sm text-headline-sm text-surface-white font-normal italic leading-relaxed mb-6">
+                “Knowledge shared with patience, reverence, and clarity transforms not only what a learner knows, but who they become.”
+              </blockquote>
+<div class="flex items-center gap-3 pt-6 border-t border-surface/10">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed"></div>
+<span class="font-label-button text-label-button text-tertiary-fixed tracking-wider uppercase text-xs">The Core Tenet of StudyMate</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         4. OUR FUTURE: WHAT WE HOPE TO SUPPORT
+         ============================================================ -->
+<section class="py-space-2xl md:py-space-3xl bg-background">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Header -->
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-sage border border-secondary-fixed-dim/50 text-primary mb-3">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-primary">ASPIRATIONS FOR THE PLATFORM</span>
+</div>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-text-primary font-medium mb-4">
+            What We Hope to Support
+          </h2>
+<p class="font-body-lg text-body-lg text-text-secondary leading-relaxed">
+            Our blueprint focuses on building enduring educational foundations that nurture sincere understanding at every stage of life.
+          </p>
+</div>
+<!-- 4 Responsive Cards Bento-style Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle hover:border-primary-fixed-dim hover:-translate-y-1 transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-sage flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="menu_book">menu_book</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Quran Learning</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+                A welcoming path for learners who want to build their relationship with the Quran through tajweed and understanding.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle flex items-center text-primary font-label-button text-label-button">
+<span class="">Foundation of recitation</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle hover:border-primary-fixed-dim hover:-translate-y-1 transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-sage flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="school">school</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Learning with Trusted Ustaads</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+                A vision for learning with teachers chosen with care, authentic knowledge, and profound respect.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle flex items-center text-primary font-label-button text-label-button">
+<span class="">Guided mentorship</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle hover:border-primary-fixed-dim hover:-translate-y-1 transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-sage flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="groups">groups</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Islamic Education for Every Generation</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+                Islamic learning should remain approachable and adaptable through different stages of life, from childhood to adulthood.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle flex items-center text-primary font-label-button text-label-button">
+<span class="">Whole family enrichment</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle hover:border-primary-fixed-dim hover:-translate-y-1 transition-all duration-300 shadow-sm flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-lg bg-surface-sage flex items-center justify-center text-primary mb-5">
+<span class="material-symbols-outlined text-2xl" data-icon="all_inclusive">all_inclusive</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Lifelong Learning</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+                Encouraging consistency, curiosity, and continued spiritual growth over a lifetime.
+              </p>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle flex items-center text-primary font-label-button text-label-button">
+<span class="">Enduring spiritual journey</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         5. FOUNDER SECTION (#founder)
+         ============================================================ -->
+<section class="py-space-2xl md:py-space-3xl bg-surface-container-low border-y border-border-subtle" id="founders"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop"><div class="text-center max-w-3xl mx-auto mb-12"><div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent-gold-light border border-tertiary-fixed-dim/50 text-tertiary mb-3"><span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest">THE PEOPLE BEHIND THE VISION</span></div><h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-text-primary font-medium mb-3">The People Behind StudyMate</h2><p class="font-body-md md:font-body-lg text-body-md md:text-body-lg text-text-secondary leading-relaxed">Two individuals, one shared vision — making Islamic knowledge more accessible to everyone.</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 max-w-6xl mx-auto"><div class="bg-surface-white rounded-2xl p-8 lg:p-10 border border-border-subtle shadow-sm hover:shadow-md hover:border-tertiary-fixed-dim/50 transition-all duration-300 relative overflow-hidden flex flex-col justify-between group"><div class="space-y-6"><div><div class="relative inline-block mb-4"><img alt="Ali Bakar - Co-Founder of StudyMate" class="w-32 h-32 md:w-36 md:h-36 rounded-2xl object-cover object-center border-2 border-tertiary-fixed-dim/50 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAViVQfODsDP5uzw41o16CXzEGbpyPctgZMjZvExYy-o7mOAIaKEFF8oSSL86_RYkYis2hhm9YYW-tcWUrzDuux0kpyStfjPWAqknGM6FYCp0dME2q6ZeYVh3VEjicyb9ja5VDlisxychBP7qFmOHffx8G83AQnLfQmXnVK9ed_joE-p5bGH8jIF8gm944CUPKMPAkvMbsTYDvWZS6ZWyvLGxzoEFJScrGXIh7E_eWlalv3Fi6izP8Wag"/></div><h3 class="font-headline-md text-headline-md text-text-primary font-medium">Ali Bakar</h3><p class="font-label-button text-label-button text-secondary font-medium mt-1">Co-Founder</p></div><blockquote class="font-body-md md:font-body-lg text-text-primary italic border-l-2 border-tertiary-fixed-dim pl-4 leading-relaxed">“Growing up, learning Islam shaped the way I see the world. With StudyMate, my hope is simply to make that same learning feel approachable and encouraging for children, parents, and anyone taking their first steps in knowledge.”</blockquote><p class="font-body-md text-body-md text-text-secondary leading-relaxed">Ali cares deeply about how learners experience knowledge — ensuring lessons are taught with warmth, patience, and understanding, so that families feel supported every step of the way.</p></div><div class="mt-8 pt-6 border-t border-border-subtle flex items-center justify-between text-caption text-caption text-text-secondary"><span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary-container"></span>Learner Experience &amp; Accessibility</span><span class="font-medium text-primary">StudyMate Initiative</span></div></div><div class="bg-surface-white rounded-2xl p-8 lg:p-10 border border-border-subtle shadow-sm hover:shadow-md hover:border-tertiary-fixed-dim/50 transition-all duration-300 relative overflow-hidden flex flex-col justify-between group"><div class="space-y-6"><div><div class="relative inline-block mb-4"><img alt="Md Hasil - Co-Founder of StudyMate" class="w-32 h-32 md:w-36 md:h-36 rounded-2xl object-cover object-top border-2 border-tertiary-fixed-dim/50 shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYit9BYHmJFfm9GTS-omwoXhVOxp4ZHcxGSjE5Xr-Hys5ziAZfcLmgjdn7a56Wpa4fxBRJGNMHBfYZmWvYsGFdRb2V-Wgn6P2C2kad_bYROrgzrccRKtGYHybwrqx6YwfQXxthGjoTwcz5x28-MUeRJuxqLGnRUB8B2PT9cQn3mH67n2o6L0lLucwMmmWGE62S0dcE0M3tI__Yeaodnre8xXwTtFNZYyMuh2_dLZrKzgzCNh-b0DnwCw"/></div><h3 class="font-headline-md text-headline-md text-text-primary font-medium">Md Hasil</h3><p class="font-label-button text-label-button text-secondary font-medium mt-1">Co-Founder</p></div><blockquote class="font-body-md md:font-body-lg text-text-primary italic border-l-2 border-tertiary-fixed-dim pl-4 leading-relaxed">“True learning happens when there is genuine trust between students and teachers. For me, StudyMate is about creating an environment where trusted ustaads are respected and students can learn with peace of mind.”</blockquote><p class="font-body-md text-body-md text-text-secondary leading-relaxed">Hasil is dedicated to building StudyMate with integrity and purpose — focusing on creating a steady, dependable foundation where teachers and learners can connect with complete sincerity.</p></div><div class="mt-8 pt-6 border-t border-border-subtle flex items-center justify-between text-caption text-caption text-text-secondary"><span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-primary-container"></span>Trust, Community &amp; Integrity</span><span class="font-medium text-primary">StudyMate Initiative</span></div></div></div><div class="mt-12 text-center"><a class="inline-flex items-center justify-center bg-primary-container hover:bg-forest-dark text-on-primary font-label-button text-label-button px-7 py-3 rounded-lg shadow-sm transition-all duration-200 active:scale-95" href="#our-vision"><span class="">Discover Our Vision</span><span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span></a></div></div></section>
+<!-- ============================================================
+         6. OUR VALUES
+         ============================================================ -->
+<section class="py-space-2xl md:py-space-3xl bg-background">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop">
+<!-- Section Heading -->
+<div class="text-center max-w-3xl mx-auto mb-14">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-sage border border-secondary-fixed-dim/50 text-primary mb-3">
+<span class="font-label-eyebrow text-label-eyebrow uppercase tracking-widest text-primary">ETHICAL FOUNDATIONS</span>
+</div>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-text-primary font-medium mb-4">
+            Built Upon Sacred Principles
+          </h2>
+<p class="font-body-lg text-body-lg text-text-secondary leading-relaxed">
+            Every layer of this initiative is guided by four timeless values that protect the dignity of sacred knowledge.
+          </p>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Value 1: Sincerity -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle shadow-sm hover:border-tertiary-fixed-dim transition-all">
+<div class="text-tertiary-fixed-dim text-xl font-bold mb-2">01</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Sincerity (Ikhlas)</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              Approach every step of learning with sincere intentions solely for the pleasure of Allah and the illumination of the soul.
+            </p>
+</div>
+<!-- Value 2: Trust -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle shadow-sm hover:border-tertiary-fixed-dim transition-all">
+<div class="text-tertiary-fixed-dim text-xl font-bold mb-2">02</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Trust (Amanah)</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              Treat learners, families, and teachers with utmost care, honesty, and transparency in every educational exchange.
+            </p>
+</div>
+<!-- Value 3: Respect -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle shadow-sm hover:border-tertiary-fixed-dim transition-all">
+<div class="text-tertiary-fixed-dim text-xl font-bold mb-2">03</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Respect (Adab)</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              Honor knowledge, preserve the sacred dignity of teachers, and nurture every single learner with genuine gentleness.
+            </p>
+</div>
+<!-- Value 4: Consistency -->
+<div class="bg-surface-white p-7 rounded-xl border border-border-subtle shadow-sm hover:border-tertiary-fixed-dim transition-all">
+<div class="text-tertiary-fixed-dim text-xl font-bold mb-2">04</div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-medium mb-3">Consistency (Istiqamah)</h3>
+<p class="font-body-md text-body-md text-text-secondary leading-relaxed">
+              Value steady, continuous effort and lifelong pursuit of knowledge over hurried completion or temporary vanity.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         7. CLOSING CONTEMPLATIVE SECTION
+         ============================================================ -->
+<section class="py-space-2xl md:py-space-3xl bg-forest-dark text-surface relative overflow-hidden">
+<!-- Radial Gold Gradient Illumination -->
+<div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-tertiary-container/30 via-transparent to-transparent pointer-events-none"></div>
+<div class="max-w-4xl mx-auto px-margin md:px-margin-tablet text-center relative z-10 space-y-6">
+<div class="w-12 h-12 mx-auto rounded-full bg-surface-white/10 flex items-center justify-center text-tertiary-fixed">
+<span class="material-symbols-outlined text-2xl" data-icon="spa">spa</span>
+</div>
+<h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-surface-white font-medium leading-tight">
+          Knowledge Is a Journey Worth Beginning.
+        </h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto leading-relaxed">
+          Explore the vision behind StudyMate and join us in our hope to make authentic Islamic learning accessible to hearts and homes across the globe.
+        </p>
+<div class="pt-4">
+<a class="inline-flex items-center justify-center bg-accent-gold-light hover:bg-tertiary-fixed text-forest-dark font-label-button text-label-button px-8 py-3.5 rounded-lg shadow-md transition-all duration-200 active:scale-95 font-semibold" href="#our-vision">
+            Back to Our Vision
+          </a>
+</div>
+</div>
+</section>
+</main>
+<!-- ============================================================
+       FOOTER (From Shared Components JSON)
+       ============================================================ -->
+<footer class="w-full bg-forest-dark text-surface border-t border-forest-dark/40">
+<div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-2xl flex flex-col md:flex-row justify-between items-center gap-space-lg">
+<!-- Brand & Mission statement -->
+<div class="flex flex-col items-center md:items-start gap-2">
+<a aria-label="StudyMate Home" class="flex items-center gap-3" href="#hero">
+<img alt="StudyMate Logo" class="h-9 w-auto object-contain brightness-110" src="https://lh3.googleusercontent.com/aida/AEtjO1UGnplaHNFaBuykf99JNccqrlzsEb-yCENf3G_pKh6QxL7Z5i5L2EiE0z7kD5prZSOjS5rwazJ_ZWG09zx3SOf6rL1M1tD47liM8FjLFr_wpPvJ1FfVye2LeDL1G8npyq_qfHCq6A7ihcDNwynVCHiY_cFLdrxXABKy91pYBx3sC9Nx9_Zdolg98NMeACrjrwWpqJkEXMqWIFSLmL3bPA6duyB_dF5yrrYYq7gav6GZqGhR_KrCWJ4x4I8"/>
+<span class="font-headline-sm text-headline-sm font-bold text-surface-white">StudyMate</span>
+</a>
+<p class="font-body-sm text-body-sm text-surface-variant/80">Learn Deen. Grow with Knowledge.</p>
+</div>
+<!-- Footer Anchor Links -->
+<nav aria-label="Footer Links" class="flex flex-wrap justify-center gap-6 md:gap-8">
+<a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-surface transition-colors duration-200" href="#hero">Home</a>
+<a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-surface transition-colors duration-200" href="#importance-of-ilm">Importance of Ilm</a>
+<a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-surface transition-colors duration-200" href="#story-ilm">Story of Two Friends</a>
+<a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-surface transition-colors duration-200" href="#our-vision">Our Vision</a>
+<a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-surface transition-colors duration-200" href="#founders">Co-Founders</a>
+<a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-surface transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-surface-variant/80 hover:text-surface transition-colors duration-200" href="#">Terms of Service</a>
+</nav>
+<!-- Copyright Note -->
+<div class="font-body-sm text-body-sm text-surface-variant/60 text-center md:text-right">
+        © 2025 StudyMate. Online Islamic Learning Initiative. All rights reserved.
+      </div>
+</div>
+</footer>
+<!-- Inline Micro-interactions for Mobile Drawer & Storytelling Experience -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Drawer Controller
+      const openBtn = document.getElementById('openMobileDrawerBtn');
+      const closeBtn = document.getElementById('closeMobileDrawerBtn');
+      const overlay = document.getElementById('mobileDrawerOverlay');
+      const panel = document.getElementById('mobileDrawerPanel');
+      const drawerLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function openDrawer() {
+        if (!overlay || !panel) return;
+        overlay.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          overlay.classList.remove('opacity-0');
+          panel.classList.remove('translate-x-full');
+        });
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeDrawer() {
+        if (!overlay || !panel) return;
+        overlay.classList.add('opacity-0');
+        panel.classList.add('translate-x-full');
+        setTimeout(() => {
+          overlay.classList.add('hidden');
+          document.body.style.overflow = '';
+        }, 300);
+      }
+
+      if (openBtn) openBtn.addEventListener('click', openDrawer);
+      if (closeBtn) closeBtn.addEventListener('click', closeDrawer);
+      if (overlay) {
+        overlay.addEventListener('click', (e) => {
+          if (e.target === overlay) closeDrawer();
+        });
+      }
+
+      drawerLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          closeDrawer();
+        });
+      });
+
+      // =========================================================
+      // INTERACTIVE STORY ENGINE
+      // =========================================================
+      const storyData = [
+        {
+          id: 1,
+          actLabel: "Act I • Separate Paths",
+          badge: "Scene 1 of 4",
+          theme: "The Contrast of Opportunities",
+          title: "Two Friends, Two Different Journeys",
+          narrative: "Meet <span class='text-text-primary font-semibold'>Zayd</span> and <span class='text-text-primary font-semibold'>Farhan</span>. They share an enduring bond of friendship, yet their journeys of learning look very different. Zayd has been blessed with an opportunity to sit consistently with a trusted teacher, absorbing the rhythm of the Quran. Farhan is sincere, respectful, and eager to do good—yet life and circumstances left him with limited access to structured Islamic education. Farhan often wonders quietly how to find authentic clarity.",
+          quoteSpeaker: "Farhan’s Quiet Reflection",
+          quote: "“I want to understand the words of my Creator, but where should someone like me begin?”",
+          takeaway: "Every sincere seeker deserves a welcoming, dignified door to sacred knowledge.",
+          nextBtnLabel: "Continue to Scene 2"
+        },
+        {
+          id: 2,
+          actLabel: "Act II • In the Classroom",
+          badge: "Scene 2 of 4",
+          theme: "The Transforming Noor",
+          title: "The Light of Understanding",
+          narrative: "Under the patient guidance of his Ustaad, Zayd experiences how Ilm-e-Deen goes far deeper than memorizing verses. He learns the precision of Tajweed, the heartfelt meaning behind every prayer posture, and the supreme beauty of Adab (spiritual manners). Knowledge ceases to be a burden; it becomes a sanctuary of inner serenity, softening his temper and grounding his decisions.",
+          quoteSpeaker: "The Teacher’s Guiding Principle",
+          quote: "“Knowledge without character is like a lamp without oil. Learn so that mercy flows through your hands.”",
+          takeaway: "True Ilm purifies the heart and turns everyday actions into conscious worship.",
+          nextBtnLabel: "See What Happens Next"
+        },
+        {
+          id: 3,
+          actLabel: "Act III • Everyday Test",
+          badge: "Scene 3 of 4",
+          theme: "Tested in Character",
+          title: "A Moment That Matters",
+          narrative: "One afternoon in the bustling marketplace, an accidental collision scatters goods across the pavement. An onlooker raises his voice in frustration. Instead of retaliating, Zayd pauses with peaceful eyes, lowers his gaze, and gently kneels to help gather the spilled items with a calm smile. Farhan witnesses this quiet grace from across the lane, struck with deep awe at how Zayd diffused anger with gentleness.",
+          quoteSpeaker: "Farhan’s Realization",
+          quote: "“His peace didn't waver for a second. Where does this quiet strength and patience come from?”",
+          takeaway: "Sacred knowledge is proven not in arguments, but in the gentleness shown during trials.",
+          nextBtnLabel: "Discover the Turning Point"
+        },
+        {
+          id: 4,
+          actLabel: "Act IV • The Shared Sanctuary",
+          badge: "Scene 4 of 4",
+          theme: "The Door Opened Together",
+          title: "The Door to Knowledge",
+          narrative: "Catching Farhan’s gaze, Zayd extends a warm hand without judgment or pretension. He invites Farhan to accompany him to his next lesson: 'Knowledge is a gift from Allah, meant for every one of us.' Side-by-side, with fresh notebooks and open hearts, the two friends sit respectfully before the teacher. Farhan’s hesitation dissolves into relief—he is finally home on the sacred path.",
+          quoteSpeaker: "Zayd’s Invitation to His Brother",
+          quote: "“Do not worry about what you missed yesterday. Today, we open the book together.”",
+          takeaway: "StudyMate exists to open this very door for learners, teachers, and families worldwide.",
+          nextBtnLabel: "Replay Journey from Start"
+        }
+      ];
+
+      let currentScene = 1;
+      let autoPlayInterval = null;
+      let isPlaying = false;
+
+      // Elements
+      const tabButtons = document.querySelectorAll('.scene-tab-btn');
+      const progressBar = document.getElementById('storyProgressBar');
+      const actLabelEl = document.getElementById('illustrationSceneLabel');
+      const badgeNumEl = document.getElementById('sceneBadgeNum');
+      const themeEl = document.getElementById('sceneTheme');
+      const titleEl = document.getElementById('sceneTitle');
+      const narrativeEl = document.getElementById('sceneNarrative');
+      const quoteSpeakerEl = document.getElementById('quoteSpeaker');
+      const quoteEl = document.getElementById('sceneQuote');
+      const takeawayEl = document.getElementById('sceneTakeaway');
+      const cardNextBtn = document.getElementById('cardNextBtn');
+      const cardNextLabel = document.getElementById('cardNextLabel');
+      const prevBtn = document.getElementById('prevSceneBtn');
+      const nextBtn = document.getElementById('nextSceneBtn');
+      const togglePlayBtn = document.getElementById('togglePlayBtn');
+      const playIcon = document.getElementById('playIcon');
+      const playLabel = document.getElementById('playLabel');
+      const replayBtn = document.getElementById('replayStoryBtn');
+
+      function updateScene(sceneNum, transition = true) {
+        currentScene = sceneNum;
+        const data = storyData[sceneNum - 1];
+
+        // 1. Update Progress bar
+        if (progressBar) {
+          progressBar.style.width = `${(sceneNum / 4) * 100}%`;
+        }
+
+        // 2. Update Tabs
+        tabButtons.forEach(btn => {
+          const btnScene = parseInt(btn.getAttribute('data-scene'), 10);
+          const circleSpan = btn.querySelector('span:first-child');
+          if (btnScene === sceneNum) {
+            btn.className = 'scene-tab-btn flex items-center gap-2.5 px-4 py-2 rounded-full text-left transition-all duration-200 bg-primary-container text-on-primary shadow-sm';
+            if (circleSpan) {
+              circleSpan.className = 'w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-surface-white text-forest-dark';
+            }
+          } else {
+            btn.className = 'scene-tab-btn flex items-center gap-2.5 px-4 py-2 rounded-full text-left transition-all duration-200 bg-surface text-text-secondary hover:text-text-primary border border-border-subtle';
+            if (circleSpan) {
+              circleSpan.className = 'w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold bg-surface-container text-text-secondary';
+            }
+          }
+        });
+
+        // 3. Update SVGs
+        for (let i = 1; i <= 4; i++) {
+          const svgEl = document.getElementById(`svgScene${i}`);
+          if (svgEl) {
+            if (i === sceneNum) {
+              svgEl.classList.remove('hidden');
+              svgEl.classList.add('animate-fadeIn');
+            } else {
+              svgEl.classList.add('hidden');
+            }
+          }
+        }
+
+        // 4. Update Narrative Content
+        if (actLabelEl) actLabelEl.textContent = data.actLabel;
+        if (badgeNumEl) badgeNumEl.textContent = data.badge;
+        if (themeEl) themeEl.textContent = data.theme;
+        if (titleEl) titleEl.textContent = data.title;
+        if (narrativeEl) narrativeEl.innerHTML = data.narrative;
+        if (quoteSpeakerEl) quoteSpeakerEl.textContent = data.quoteSpeaker;
+        if (quoteEl) quoteEl.textContent = data.quote;
+        if (takeawayEl) takeawayEl.textContent = `Takeaway: ${data.takeaway}`;
+        if (cardNextLabel) cardNextLabel.textContent = data.nextBtnLabel;
+
+        // 5. Update Prev/Next button states
+        if (prevBtn) prevBtn.disabled = (sceneNum === 1);
+        if (nextBtn) nextBtn.disabled = (sceneNum === 4);
+      }
+
+      // Tab clicks
+      tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          stopAutoPlay();
+          const targetScene = parseInt(btn.getAttribute('data-scene'), 10);
+          updateScene(targetScene);
+        });
+      });
+
+      // Stepper Controls
+      if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+          stopAutoPlay();
+          if (currentScene > 1) updateScene(currentScene - 1);
+        });
+      }
+
+      if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+          stopAutoPlay();
+          if (currentScene < 4) updateScene(currentScene + 1);
+        });
+      }
+
+      if (cardNextBtn) {
+        cardNextBtn.addEventListener('click', () => {
+          if (currentScene === 4) {
+            updateScene(1);
+          } else {
+            updateScene(currentScene + 1);
+          }
+        });
+      }
+
+      if (replayBtn) {
+        replayBtn.addEventListener('click', () => {
+          stopAutoPlay();
+          updateScene(1);
+        });
+      }
+
+      // Autoplay Toggle
+      function startAutoPlay() {
+        isPlaying = true;
+        if (playIcon) playIcon.textContent = 'pause';
+        if (playLabel) playLabel.textContent = 'Pause';
+        togglePlayBtn.classList.add('bg-surface-sage', 'text-primary');
+
+        autoPlayInterval = setInterval(() => {
+          if (currentScene < 4) {
+            updateScene(currentScene + 1);
+          } else {
+            updateScene(1);
+          }
+        }, 6000);
+      }
+
+      function stopAutoPlay() {
+        isPlaying = false;
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = null;
+        if (playIcon) playIcon.textContent = 'play_arrow';
+        if (playLabel) playLabel.textContent = 'Auto-play';
+        togglePlayBtn.classList.remove('bg-surface-sage', 'text-primary');
+      }
+
+      if (togglePlayBtn) {
+        togglePlayBtn.addEventListener('click', () => {
+          if (isPlaying) {
+            stopAutoPlay();
+          } else {
+            startAutoPlay();
+          }
+        });
+      }
+
+      // Initial Scene Setup
+      updateScene(1, false);
+    });
+  </script>
+</body></html>
